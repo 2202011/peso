@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="gender-selection">
+                <img src="img/Chavita.png" alt="Femenino" class="gender-icon" id="female">
+            </div>
+            <div class="slider-container">
+                <label for="peso">Peso (kg): <span id="peso-value">70</span></label>
+                <input type="range" id="peso" name="peso" min="30" max="150" value="70">
+            </div>
+            <div class="slider-container">
+                <label for="altura">Altura (cm): <span id="altura-value">170</span></label>
+                <input type="range" id="altura" name="altura" min="100" max="220" value="170">
+            </div>
+            <button id="calcular">Calcular IMC</button>
+            <br>
+            <br>
+            <div class="cards">
+                <table>
+                    <tr>
+                        <th>Estatura (cm)</th>
+                        <th></th>
+                        <th>Peso ideal (kg)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            150<br>155<br>160<br>165<br>170<br>175<br>180
+                        </td>
+                        <td></td>
+                        <td>
+                            45-56<br>47-59<br>50-62<br>53-65<br>56-69<br>59-72<br>62-75
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="right">
+            <h2>Resultado de IMC</h2>
+            <div id="resultado"></div>
+            <div id="imc-bar-container">
+                <div id="imc-bar"></div>
+            </div>
+            <div id="descripcion"></div>
+            <div class="info-salud">
+                <h2>Información sobre la salud</h2>
+                <h3>¿Qué es el IMC?</h3>
+                <p>El índice de masa corporal (IMC) es una medida que se utiliza para evaluar si una persona tiene un peso saludable en relación con su altura. Un IMC saludable se encuentra generalmente entre 18.5 y 24.9.</p>
+                <h3>Importancia del peso saludable</h3>
+                <p>Mantener un peso saludable es importante para la salud general y puede ayudar a prevenir y controlar muchas enfermedades y condiciones. Esto incluye enfermedades cardíacas, diabetes tipo 2 y ciertos tipos de cáncer.</p>
+                <h3>Recomendaciones</h3>
+                <ul>
+                    <li>Mantén una dieta equilibrada y variada.</li>
+                    <li>Realiza actividad física regularmente.</li>
+                    <li>Consulta a tu médico para obtener más información sobre tu IMC y lo que significa para tu salud.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

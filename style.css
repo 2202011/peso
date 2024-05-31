@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px 0;
+}
+
+.left, .right {
+    padding: 20px;
+    flex: 1;
+}
+
+.cards {
+    background-color: #0d5585;
+    color: white;
+    margin: 20px;
+    padding: 20px 2%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 3%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.gender-selection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.gender-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gender-icon:hover {
+    transform: scale(1.1);
+}
+
+.slider-container {
+    margin-bottom: 20px;
+}
+
+.slider-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#calcular {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#calcular:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#imc-bar-container {
+    width: 100%;
+    background: linear-gradient(to right, #00FF00, #FFFF00, #FFA500, #FF0000);
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#imc-bar {
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparent background color */
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+#descripcion {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.info-salud {
+    margin-top: 20px;
+}
+
+.info-salud h2, .info-salud h3 {
+    margin-top: 0;
+}
+
+.right {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive design */
+@media(min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .right {
+        border-left: 1px solid #ddd;
+        border-top: none;
+    }
+}
+
+@media(min-width: 1024px) {
+    .gender-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        margin: 40px;
+        padding: 20px;
+    }
+}
